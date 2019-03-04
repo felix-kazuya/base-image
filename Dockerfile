@@ -5,7 +5,7 @@ ENV REFRESHED_AT 2019-03-04
 
 #Installing Required Stuff
 RUN apt-get -y update && \
-    apt-get install -y python3 python3-yaml python3-jinja2 python3-httplib2 python3-paramiko python3-setuptools python3-pkg-resources git python3-pip htop tree nano wget curl && \
+    apt-get install -y python3 python3-yaml python3-jinja2 python3-httplib2 python3-paramiko python3-setuptools python3-pkg-resources git python3-pip htop tree nano wget curl software-properties-common && \
     apt-get -y upgrade && \
     apt-get clean && \
     apt-get autoclean && \
