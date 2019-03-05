@@ -7,4 +7,5 @@ stages:
   - jobs:
       - scripts:
           - docker build .
-
+      - requirements:
+          - docker
