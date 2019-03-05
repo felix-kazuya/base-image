@@ -1,0 +1,10 @@
+project:
+  key: CWALONKA
+  plan:
+    key: BASEIMAGE
+    name: BASEIMAGE
+stages:
+  - jobs:
+      - scripts:
+          - docker build .
+
