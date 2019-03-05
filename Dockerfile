@@ -4,7 +4,10 @@ MAINTAINER Christian Walonka <cwalonka@it-economics.de>
 ENV REFRESHED_AT 2019-03-04
 
 #Installing Required Stuff
-RUN apt-get -y update && \
+RUN locale-gen de_DE && \
+    locale-gen de_DE.UTF-8 && \
+    update-locale && \
+    apt-get -y update && \
     apt-get install -y python3 python3-yaml python3-jinja2 python3-httplib2 python3-paramiko python3-setuptools python3-pkg-resources git python3-pip htop tree nano wget curl software-properties-common && \
     apt-get -y upgrade && \
     apt-get clean && \
