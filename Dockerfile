@@ -1,4 +1,6 @@
-FROM ubuntu:16.04
+ARG	IMAGE=ubuntu
+ARG	TAG=16.04
+FROM $IMAGE:$TAG
 MAINTAINER Felix Kazuya <me@felixkazuya.de>
 MAINTAINER Christian Walonka <cwalonka@it-economics.de>
 ENV REFRESHED_AT 2019-03-04

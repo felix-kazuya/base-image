@@ -10,6 +10,12 @@ This Image is intented to be used as a base image and not for stand alone.
 
 ### Usage
 
+#### Build
+```shell
+docker build . --tag felixkazuyadev/base-image:latest --build-arg VERSION=ubuntu --build-arg TAG=16.04
+```
+
+
 #### Container Parameters
 
 Start a shell to examine the image:
