@@ -4,7 +4,7 @@ Base Image based on Ubuntu, containing Ansible.
 
 ## Getting Started
 
-This Image is intented to be used as a base image and not for stand alone.
+This Image is intented to be used as a base image and not for stand alone. Git and usefull stuff is included.
 
 ### Prerequisities
 
