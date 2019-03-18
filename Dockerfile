@@ -23,7 +23,6 @@ RUN locale-gen de_DE && \
     locale-gen de_DE.UTF-8 && \
     update-locale
 
-
 #Setting up required Environment 
 ENV TERM xterm
 
