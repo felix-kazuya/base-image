@@ -7,7 +7,13 @@ ENV REFRESHED_AT 2019-03-04
 
 #Installing Required Stuff
 RUN apt-get -y update && \
-    apt-get install -y locales python3 python3-yaml python3-jinja2 python3-httplib2 python3-paramiko python3-setuptools python3-pkg-resources git python3-pip htop tree nano wget curl software-properties-common libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential autoconf && wget https://www.kernel.org/pub/software/scm/git/git-2.20.1.tar.gz -O git.tar.gz && tar -xzf git.tar.gz && cd git-2.20.1 && make configure && ./configure --prefix=/usr/local && make install && \
+    apt-get install -y locales python3 python3-yaml python3-jinja2 \
+    python3-httplib2 python3-paramiko python3-setuptools python3-pkg-resources \
+    python3-pip htop tree nano wget curl software-properties-common libcurl4-gnutls-dev \
+    libexpat1-dev gettext libz-dev libssl-dev build-essential autoconf \
+    && wget https://www.kernel.org/pub/software/scm/git/git-2.20.1.tar.gz -O git.tar.gz && \
+    tar -xzf git.tar.gz && cd git-2.20.1 && \
+    make configure && ./configure --prefix=/usr/local && make install && \
     apt-get -y upgrade && \
     apt-get clean && \
     apt-get autoclean && \
