@@ -18,8 +18,6 @@ RUN apt-get -y update && \
     apt-get clean && \
     apt-get autoclean && \
     apt-get autoremove 
-#Install git
-RUN apt-get install -y 
 RUN pip3 install --upgrade pip && pip install python3-keyczar && ln -s /usr/bin/python3 /usr/bin/python
 RUN mkdir /etc/ansible/
 RUN echo '[local]\nlocalhost\n' > /etc/ansible/hosts
